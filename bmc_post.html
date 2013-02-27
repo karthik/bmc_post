@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="sl" type="text/css" />
+</head>
+<body>
+<h1 id="version-control-for-scientific-research">Version control for scientific research</h1>
+<p>We live in an increasingly collaborative era, where the Internet enables distance collaboration almost trivially -- not just with e-mail and videoconferencing, but with collaborative realtime document editing and networked transmission of data and analyses. These tools allow us to collectively leverage many resources to rapidly solve problems and ultimately accelerate scientific discovery. While these tools and technologies are fundamentally changing how we collaborate on science, there is still considerable room for improvement in how we are using them.</p>
+<p>Programmers, and especially the world of open source software development, have developed a number of tools that enable easy distance collaboration and sharing of data and code. One of the most important is <strong>version control</strong> -- tracking of changes and authorship -- which, in programming, is largely used for writing and sharing code, tracking and annotating contributions, and resolving changes to the same section of a program. In recent years a wide variety of version control software has become readily and freely available, including Subversion, git, and Mercurial.</p>
+<p>Motivated by much the same problems as programmers -- how do I track changes and authorship, and resolve conflicting changes? -- scientists have increasingly begun using these version control systems not only for software but for paper and grant writing, and even for tracking data and metadata. In particular, <a href="http://ged.msu.edu/">CTB</a> and others have argued that version control should be a required &quot;good practice&quot; for all computational science in practice <span class="citation">(G. Wilson et al. 2012)</span>. This increased interest in versioning for science has led to a realization that, collectively, we are lacking in workflows and practices that take advantage of version control. This is especially true for git and Mercurial, both decentralized version control systems that enable many different modes of collaboration.</p>
+<p>One of us, <a href="http://nature.berkeley.edu/~kram">KR</a>, has just published a paper showing how &quot;git can facilitate greater reproducibility and increased transparency in science.&quot; <span class="citation">(Ram 2013)</span>. Occasioned in part by this first paper, a group of us is working to document and demonstrate the many uses to which we have put git. These include software development and dissemination, paper and grant writing, paper and grant feedback, contributions to Wiki-like community documentation sites, and sharing of data analysis &quot;notebooks&quot; and executable papers.</p>
+<p>In tandem with git and Mercurial, two commercial Web sites have appeared, <a href="http://github.com">GitHub</a> and <a href="http://bitbucket.org">BitBucket</a>. These sites serve as central &quot;hubs&quot; through which code and other electronic artifacts can be communicated, shared, and collaborated upon.</p>
+<p>We believe that KR's paper <span class="citation">(Ram 2013)</span> is a solid first step in showing how git and sites like GitHub can be used for versioning, collaboration, and feedback on research. Separately, CTB's group and others have explored git's use for publishing reproducible notebooks and enabling <a href="http://ged.msu.edu/papers/2012-diginorm/">community</a> <a href="http://qiime.org/home_static/nih-cloud-apr2012/">documentation</a>.</p>
+<p>Git and Mercurial, and the sites that support public hosting of git and Mercurial repositories such as GitHub and BitBucket, do provide an excellent solution to the problem of posting code from published modeling and data analysis efforts. Rather than such code being hosted on university Web sites that languish unmaintained, or deposited in hard-to-find journal supplements <span class="citation">(Schultheiss et al. 2011; Wren 2004)</span>, GitHub and BitBucket (among other sites) provide stable hosting for code. Moreover, since these sites are widely used outside the research community -- most especially in the open source community -- the likelihood that they will disappear with loss of funding body interest is low.</p>
+<p>One of the most interesting potential uses for git and Mercurial is in supporting the &quot;forking&quot;, or copying and modification, of data analysis pipelines, to enable field-wide reuse of the analysis pipeline provided in a published paper. Unlike more centralized systems such as Subversion, git and Mercurial both readily support diverging development of software starting from a common base by other groups. This kind of branching enables remixing of research software, while retaining all provenance information. Because projects can easily be made available for branching upon publication by using GitHub and BitBucket for post-publication development and dissemination, many barriers to remixing and reuse of software are significantly lowered.</p>
+<p>Git and Mercurial, and the GitHub and BitBucket sites, are not perfect fits for the scientific process. While free public and private repositories are available to academics on both sites, neither site is archival, and so sites such as figshare or field-specific archives may be needed to provide a lasting home for published software and data.</p>
+<p>We have only begun to understand and detail the many uses of distributed version control in conducting research, but already it offers many exciting opportunities to improve on existing workflows. We look forward to exploring this area in the future and building a real community of practice.</p>
+<p>Our next steps in this area are to gather further examples of the use of version control for scientific research; develop tutorials, handbooks, and training materials; survey more scientific users on their current and planned practices; and ultimately publish additional works on how version control is being used and how it <em>could</em> be used to improve scientific practice and efficiency.</p>
+<h1 id="literature-cited">Literature Cited</h1>
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
+   <info>
+      <title>Ecology Letters</title>
+      <id>http://www.zotero.org/styles/ecology-letters</id>
+      <link href="http://www.zotero.org/styles/ecology-letters" rel="self"/>
+      <link href="http://www.wiley.com/bw/submit.asp?ref=1461-023X&amp;site=1" rel="documentation"/>
+      <link href="http://www.zotero.org/styles/apa" rel="template"/>
+      <author>
+         <name>David Kaplan</name>
+         <email>david.kaplan@ird.fr</email>
+      </author>
+      <contributor>
+         <name>Simon Kornblith</name>
+         <email>simon@simonster.com</email>
+      </contributor>
+      <contributor>
+         <name>Bruce D'Arcus</name>
+      </contributor>
+      <contributor>
+         <name>Curtis M. Humphrey</name>
+      </contributor>
+      <contributor>
+         <name>Richard Karnesky</name>
+         <email>karnesky+zotero@gmail.com</email>
+         <uri>http://arc.nucapt.northwestern.edu/Richard_Karnesky</uri>
+      </contributor>
+      <contributor>
+         <name>Sebastian Karcher</name>
+      </contributor>
+      <category field="biology"/>
+      <category field="generic-base"/>
+      <category citation-format="author-date"/>
+      <updated>2009-12-01T20:22:16+00:00</updated>
+      <rights>This work is licensed under a Creative Commons Attribution-Share Alike 3.0 License: http://creativecommons.org/licenses/by-sa/3.0/</rights>
+   </info>
+   <macro name="container">
+      <choose>
+         <if type="chapter paper-conference" match="any">
+            <text term="in" text-case="capitalize-first" suffix=": "/>
+            <text variable="container-title" font-style="italic" form="short"/>
+            <text variable="collection-title" prefix=", "/>
+            <names variable="editor translator" prefix=" (" delimiter=", " suffix=")">
+               <label form="short" text-case="lowercase" suffix=". " strip-periods="true"/>
+               <name name-as-sort-order="all" and="symbol" sort-separator=", " initialize-with="." delimiter=", " delimiter-precedes-last="never"/>
+            </names>
+         </if>
+         <else>
+            <group delimiter=", ">
+               <text variable="container-title" font-style="italic" form="short"/>
+               <text variable="collection-title"/>
+            </group>
+         </else>
+      </choose>
+   </macro>
+   <macro name="author">
+      <names variable="author">
+         <name name-as-sort-order="all" and="symbol" sort-separator=", " initialize-with="." delimiter=", " delimiter-precedes-last="never"/>
+         <label form="short" prefix=" (" suffix=".)" text-case="capitalize-first" strip-periods="true"/>
+         <substitute>
+            <names variable="editor"/>
+            <names variable="translator"/>
+            <text macro="title"/>
+         </substitute>
+      </names>
+   </macro>
+   <macro name="author-short">
+      <names variable="author">
+         <name form="short" and="symbol" delimiter=", " initialize-with=". "/>
+         <substitute>
+            <names variable="editor"/>
+            <names variable="translator"/>
+            <choose>
+               <if type="bill book graphic legal_case motion_picture report song" match="any">
+                  <text variable="title" form="short" font-style="italic"/>
+               </if>
+               <else>
+                  <text variable="title" form="short" quotes="true"/>
+               </else>
+            </choose>
+         </substitute>
+      </names>
+   </macro>
+   <macro name="access">
+      <choose>
+         <if type="webpage">
+            <group>
+               <text value="URL" suffix=" "/>
+               <text variable="URL"/>
+            </group>
+         </if>
+      </choose>
+   </macro>
+   <macro name="title">
+      <choose>
+         <if type="report thesis" match="any">
+            <text variable="title" font-style="italic"/>
+            <group prefix=" (" suffix=")">
+               <text variable="genre"/>
+               <text variable="number" prefix=" No. "/>
+            </group>
+         </if>
+         <else-if type="bill book graphic legal_case motion_picture report song speech" match="any">
+            <text variable="title" font-style="italic"/>
+         </else-if>
+         <else-if type="webpage">
+            <text variable="title"/>
+            <text value="WWW Document" prefix=" [" suffix="]"/>
+         </else-if>
+         <else>
+            <text variable="title"/>
+         </else>
+      </choose>
+   </macro>
+   <macro name="publisher">
+      <choose>
+         <if type="report thesis" match="any">
+            <group delimiter=", ">
+               <text variable="publisher"/>
+               <text variable="publisher-place"/>
+            </group>
+         </if>
+         <else>
+            <text variable="genre" suffix=", "/>
+            <group delimiter=", ">
+               <text variable="publisher"/>
+               <text variable="publisher-place"/>
+            </group>
+         </else>
+      </choose>
+   </macro>
+   <macro name="event">
+      <choose>
+         <if variable="event">
+            <text term="presented at" text-case="capitalize-first" suffix=" "/>
+            <text variable="event"/>
+         </if>
+      </choose>
+   </macro>
+   <macro name="issued">
+      <choose>
+         <if variable="issued">
+            <date variable="issued">
+               <date-part name="year"/>
+            </date>
+         </if>
+         <else-if variable="accessed">
+            <choose>
+               <if type="webpage">
+                  <date variable="accessed">
+                     <date-part name="year"/>
+                  </date>
+               </if>
+               <else>
+                  <text term="no date" form="short"/>
+               </else>
+            </choose>
+         </else-if>
+         <else>
+            <text term="no date" form="short"/>
+         </else>
+      </choose>
+   </macro>
+   <macro name="edition">
+      <choose>
+         <if is-numeric="edition">
+            <group delimiter=" ">
+               <number variable="edition" form="ordinal"/>
+               <text value="edn"/>
+            </group>
+         </if>
+         <else>
+            <text variable="edition" suffix="."/>
+         </else>
+      </choose>
+   </macro>
+   <macro name="locators">
+      <choose>
+         <if type="article-journal article-magazine article-newspaper" match="any">
+            <group prefix=", " delimiter=", ">
+               <group>
+                  <text variable="volume"/>
+               </group>
+               <text variable="page"/>
+            </group>
+         </if>
+         <else-if type="bill book graphic legal_case motion_picture report song" match="any">
+            <group delimiter=". " prefix=". ">
+               <text macro="edition"/>
+               <text macro="event"/>
+               <text macro="publisher"/>
+            </group>
+         </else-if>
+         <else-if type="chapter paper-conference" match="any">
+            <group delimiter=", " prefix=". ">
+               <text macro="event"/>
+               <text macro="publisher"/>
+               <group>
+                  <label variable="page" form="short" suffix=" "/>
+                  <text variable="page"/>
+               </group>
+            </group>
+         </else-if>
+      </choose>
+   </macro>
+   <citation et-al-min="3" et-al-use-first="1" et-al-subsequent-min="3" et-al-subsequent-use-first="1" disambiguate-add-year-suffix="true" collapse="year">
+      <sort>
+         <key macro="issued"/>
+         <key macro="author"/>
+      </sort>
+      <layout prefix="(" suffix=")" delimiter="; ">
+         <group delimiter=" ">
+            <text macro="author-short"/>
+            <text macro="issued"/>
+         </group>
+      </layout>
+   </citation>
+   <bibliography hanging-indent="true" et-al-min="6" et-al-use-first="6" entry-spacing="0" line-spacing="2">
+      <sort>
+         <key macro="author"/>
+         <key macro="issued" sort="ascending"/>
+      </sort>
+      <layout>
+         <group suffix=".">
+            <text macro="author" suffix="."/>
+            <text macro="issued" prefix=" (" suffix="). "/>
+            <group delimiter=". ">
+               <text macro="title"/>
+               <text macro="container"/>
+            </group>
+            <text macro="locators"/>
+         </group>
+         <text macro="access" prefix=". "/>
+      </layout>
+   </bibliography>
+</style>
+
+<p>Ram, Karthik. 2013. “git can facilitate greater reproducibility and increased transparency in science.” <em>Source Code in Medicine and Biology</em> xx (xx): xx.</p>
+<p>Schultheiss, Sebastian J., Marc-Christian Münch, Gergana D. Andreeva, and Gunnar Rätsch. 2011. “Persistence and availability of Web services in computational biology.” Ed. Dongxiao Zhu. <em>PloS one</em> 6 (9) (jan): e24914. doi:10.1371/journal.pone.0024914. <a href="http://dx.plos.org/10.1371/journal.pone.0024914" title="http://dx.plos.org/10.1371/journal.pone.0024914">http://dx.plos.org/10.1371/journal.pone.0024914</a>.</p>
+<p>Wilson, Greg, D. A. Aruliah, C. Titus Brown, Neil P. Chue Hong, Matt Davis, Richard T. Guy, Steven H. D. Haddock, et al. 2012. “Best Practices for Scientific Computing.” <em>Arxiv</em> (sep): 6.</p>
+<p>Wren, Jonathan D. 2004. “404 not found: the stability and persistence of URLs published in MEDLINE.” <em>Bioinformatics (Oxford, England)</em> 20 (5) (mar): 668–72. doi:10.1093/bioinformatics/btg465. <a href="http://bioinformatics.oxfordjournals.org/content/20/5/668.abstract" title="http://bioinformatics.oxfordjournals.org/content/20/5/668.abstract">http://bioinformatics.oxfordjournals.org/content/20/5/668.abstract</a>.</p>
+</body>
+</html>
